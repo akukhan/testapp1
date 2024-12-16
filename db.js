@@ -37,7 +37,7 @@ export const insertSteps = async (steps) => {
          WHERE date = ?;`,
         [steps, currentDate]
       );
-      console.log(`Steps updated for ${currentDate}`);
+      console.log(`Steps updated for ${currentDate} ${steps}`);
     } else {
       // Insert a new entry for the date
       await db.runAsync(
