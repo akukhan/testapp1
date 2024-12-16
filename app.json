@@ -23,6 +23,15 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "bf806cd7-2b03-4fc9-931d-7e5c662603fc"
+      }
+    },
+    "owner": "akukhan",
+    "plugins": [
+      "expo-sqlite"
+    ]
   }
 }
