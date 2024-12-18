@@ -19,7 +19,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.akukhan.testapp1"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -31,7 +32,8 @@
     },
     "owner": "akukhan",
     "plugins": [
-      "expo-sqlite"
+      "expo-sqlite",
+      "expo-asset"
     ]
   }
 }
