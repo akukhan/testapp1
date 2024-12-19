@@ -202,7 +202,7 @@ import { StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from './screens/HomeScreen';
-import SettingsComponent from './screens/Settings';
+import UserProfileComponent from './components/userProfile';
 import { Ionicons } from 'react-native-vector-icons';
 
 const Tab = createBottomTabNavigator();
@@ -228,7 +228,7 @@ export default function App() {
         })}
       >
         <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="Settings" component={SettingsComponent} />
+        <Tab.Screen name="User Profile" component={UserProfileComponent} />
       </Tab.Navigator>
     </NavigationContainer>
   );

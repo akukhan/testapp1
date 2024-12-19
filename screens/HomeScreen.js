@@ -9,18 +9,28 @@ export default function HomeScreen() {
   return (
     <View style={styles.container}>
       {/* Step Counter Component */}
+      <View style={styles.stepSection}>
       <PedometerComponent setStepCount={setStepCount} />
 
+      </View>
+
       {/* Map Component */}
+     
       <MapComponent stepCount={stepCount} />
+      
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    flex: 1,    
+  },
+  stepSection: {
+    height: 200,
+    justifyContent: 'center', // Centers content vertically in the step section
+    alignItems: 'center', // Centers content horizontally
+    backgroundColor: '#49a3ca', // Optional: Add a background color for visual distinction
+    
   },
 });
